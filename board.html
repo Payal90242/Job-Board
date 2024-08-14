@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Board</title>
+ <style>
+  body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:darkblue ;
+    color: white;
+    background-size: cover;
+}
+header
+{
+    color: white;
+    padding: 1 rem;
+    text-align: center;
+}
+nav
+{
+color: white;
+text-align: center;
+}
+nav ul
+{
+  list-style: none;
+  text-align: right;
+  padding-right: 20px;
+}
+nav ul li
+{
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a
+{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover
+{
+  text-decoration: underline;
+}
+.container
+{
+    padding: 2 rem;
+}
+.job-listings
+{
+    flex-wrap: wrap;}
+.job-listing
+{
+    margin: 1 rem;
+    box-sizing: border-box;
+    padding: 1 rem;
+    width: calc(33%-2rem);
+
+}
+.job-detail,.dashboard,.application-form
+{
+    padding: 10 px;
+    margin:10px 0;
+}
+input[type="text"],input[type="email"],input[type="password"],textarea{
+    width: 100%;
+    padding: 0.5 rem;
+    margin: 0.5rem 0;
+}
+button
+{
+    padding: 0.5rem 1rem;
+    background-color: gray;
+    color: white;
+    border: none;
+}
+@media(max-width:768px){
+    .job-listing{
+        width: calc(50%-2rem);
+    }
+}
+@media(max-width:480px){
+    .job-listing{
+        width: 100%;
+    }
+}
+form
+{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+form label
+{
+  display: block;
+  margin: 10px 0 5px;
+}
+form input,form textarea
+{
+  width: 500px;
+  text-align: center;
+  padding: 2px;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+}
+form button
+{
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover
+{
+  background-color: darkgray;
+}
+
+
+ </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Job Board</h1>
+  </header>
+  <nav>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lPmTAHtpeVpmBMwmWGFckyo3T7drCmgLfQ&s" alt="logo" width="100px" height="50px" align="left">
+    <ul>
+      <li>   <a href="#home">Home</a></li>
+      <li> <a href="#jobs">Job listings</a></li>
+      <li> <a href="#dashboard">Dashboard</a></li>
+    </ul>
+  </nav>
+  </div>
+  <br>
+  <img src="https://cdn.prod.website-files.com/6128ada90655fc258bfa9d75/651ce5f13d4234857751ac0c_brd.jpg" alt="about us image" width="400px" align="right" height="400px" >
+  <div class="container">
+    <div id="home">
+      <h2>Featured Job Listings</h2> 
+      <div class="job-listings">
+        <div class="job -listing">
+          <h3>Software Developer</h3>
+          <p><strong>Company:</strong>Softech Private Limited</p>
+          <p><strong>Location:</strong>Banglore,Karnataka</p>
+          <button>View details</button>
+        </div>
+        <br>
+        <div class="job-listing">
+          <h3>Web Developer</h3>
+          <p><strong>Company:</strong>Softech Private Limited</p>
+          <p><strong>Location:</strong>Banglore,Karnataka</p>
+          <button>View details</button>
+        </div>
+      </div>
+    </div>
+    <div id="jobs">
+      <h2>Job Listings</h2>
+      <div class="Search-bar">
+        <input type="text" placeholder="Search for jobs...">
+        <button>Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="job-listings">
+    <div class="job-listing">
+
+    </div>
+  </div>
+  <div id="dashboard">
+    <h2>Employer Dashboard</h2>
+    <div class="dashboard">
+      <h3>Manage account</h3>
+      <button>Post a Job</button>
+    </div>
+   <h2>Candidate Dashboard</h2>
+   <div class="dashboard">
+    <h3>Profile management</h3>
+    <button>View Applications</button>
+   </div>
+  </div>
+    </div>
+  </div>
+  <div id="job detail">
+    <h3>Software Developer</h3>
+    <p><strong>Company:</strong>Softech Private Limited</p>
+    <p><strong>Location:</strong>Banglore,Karnataka</p>
+    <p><strong>Description:</strong>We are looking a skiled Software Developer to join our team.The ideal candidate will design,develop and maintan software applications that meet user needs and business goals.</p>
+    <button>Apply Now</button>
+  </div>
+   <div class="job-listing">
+    <h3>Web Developer</h3>
+    <p><strong>Company:</strong>Softech Private Limited</p>
+    <p><strong>Location:</strong>Banglore,Karnataka</p>
+    <p><strong>Description:</strong>We are looking for a highly organized and dynamic Project manager to join our team.The ideal candidate will be responsible for planning,executing and finalizing projects according to deadlines and within budget.</p>
+    <button>Apply Now</button>
+  </div>
+  <div id="Application">
+    <h2>Job Application</h2>
+    <div class="application-form">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id=" name" name="name">
+      <label for="email">E-mail:</label>
+<input type="email" id="email" name="email">
+<label for="resume">Resume:</label>
+<input type="file" id="resume" name="resume">
+<button type="submit">Submit Application</button>
+  </form>
+    </div>
+  </div>
+</body>
+</html>
